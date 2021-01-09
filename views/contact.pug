@@ -1,0 +1,126 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Contact
+    link(rel="stylesheet" href="../static/style.css")
+    link(rel="stylesheet" href="../static/contactstyle.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(href="https://fonts.googleapis.com/css?family=Alex Brush" rel="stylesheet")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    script(src="https://kit.fontawesome.com/a076d05399.js")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+  body
+    section.head
+      .navbar
+        .logo
+          p Artsy Tarsy
+        .menu
+          ul#link
+            li
+              a(href="/") HOME
+            li
+              a(href="/about") ABOUT
+            li
+              a(href="/service") SERVICE
+            li
+              a(href="/brand") BRAND
+            li
+              a(href="/gallery") GALLERY
+            li
+              a.active(href="/'contact") CONTACT
+        a.icon(href="javascript:void(0);" onclick="myFunction()")
+          i.fa.fa-bars
+    section#contact
+      .contact
+        .chead
+          h1 CONTACT
+        .timedetail
+          .time.t1.t3
+            strong
+              p
+                i.fas.fa-map-marker-alt   
+                | Location:
+            p No. 17 2nd Cross,
+            p MP Layout, Bommanahalli,
+            p Bengaluru, Karnataka
+            p 560068
+          .time.t1
+            strong
+              p
+                i.fa.fa-clock-o   
+                | Open Hours:
+            p Mon-Sun
+            p Open for 24 hrs.
+          .time.t1
+            strong
+              p
+                i.fa.fa-envelope   
+                | E-mail:
+            p artsytarsy@gmail.com
+          .time.t1
+            strong
+              p
+                i.material-icons 
+                |   Call:
+            p +91&nbsp7562052272
+            p +91&nbsp8051225496
+    section.locationmap
+      .maptrace
+        iframe.resiframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0049175869185!2d77.629651514905!3d12.907405090898056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14935cf006f9%3A0x8edb12d2741d8a9f!2s17%2C%202nd%20Cross%20Rd%2C%20Rajiv%20Gandhi%20Nagar%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102!5e0!3m2!1sen!2sin!4v1609311124061!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+    section.contactform
+      .contacthead
+        h1 CONTACT FORM
+      form(action="/contactus" ,method="post" ,class="myform")
+        .contactfill
+          .contact1
+            label.input1
+              input(type="text" placeholder="Your Name" name="name" required)
+            label.input2
+              input(type="text" placeholder="You Email" name="mail" required)
+          .contact2
+            label
+              input(type="text" placeholder="Your Subject" name="subject" required)
+            label.textarea
+              textarea(placeholder="Write Your Message" name="message" required)
+          .contactbtn
+            input.contactusbtn(type="submit" value="submit")
+    section#footer
+      .foot
+        .footbox
+          .foot1.img7
+            h1 Artsy Tarsy
+          .foot1
+            ul
+              li
+                a(href="/") HOME
+              li
+                a(href="/about") ABOUT
+              li
+                a(href="/service") SERVICE
+              li
+                a(href="/brand") BRAND
+              li
+                a(href="/gallery") GALLERY
+              li
+                a(href="/contact") CONTACT
+          .foot1.address
+            ul
+              li No. 17 2nd Cross,
+              li MP Layout, Bommanahalli,
+              li Bengaluru, Karnataka
+              li 560068
+        .footbox.copy
+          p
+            a(href="mailto:artsytarsy@example.com") ArtsyTarsy@gmail.com
+          i.fa.fa-copyright  copyright The Artsy Tarsy. All Rights Reserved.
+  script.
+    function myFunction() {
+    var x = document.getElementById("link");
+    if (x.style.display == "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+    }

@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.servicebg{ 
+    width: 100%;
+    height: 91vh;
+    background: url('images/servicebg.jpg');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0,0,0.7); 
+    border: 1px solid black;
+} 
+.service{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    color: white; 
+    text-align: center;
+} 
+.service h1{
+    font-family: 'Alex Brush'; 
+    font-size: 2rem;
+} 
+.service h3{
+    font-family: monospace;
+} 
+.servicedifferent{
+    width: 100%;
+    height: 90vh;
+}
+.shead
+{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}  
+
+.shead h1{
+    border-bottom: 1px solid black;
+}
+.shead p{
+    font-family: monospace;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;  
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+} 
+.w1{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+} 
+.w2{
+    width: 30%;
+    height: 20vh;
+    border: 1px solid grey;
+    margin: 2%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgb(92, 91, 91), 2px 2px 2px 2px grey;
+} 
+
+.w2:hover{
+    transform: scale(1.1); 
+    box-shadow: 2px 2px 2ps 2ps pink, 2px 2px 2px 2px salmon !important;
+}
+.service1{
+    background: url('images/service1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0,0,0.7);
+} 
+.service2{
+    background: url('images/service2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0,0,0.7);
+}
+.service3{
+    background: url('images/service3.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0,0,0.7);
+}
+.service4{
+    background: url('images/service4.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0,0,0.7);
+}
+.service5{
+    background: url('images/service5.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   background-blend-mode: darken;
+    background-color: rgba(0, 0,0,0.7);
+}
+.service6{ 
+    background: url('images/service6.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0,0,0.7);
+} 
+
+.healthy{ 
+    width: 100%;
+    height:  92vh;
+    background: url('images/service2.jpg'); 
+    background-size: 100% 100%; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.7);
+} 
+.hhead{
+    color: white; 
+    width: 100%;
+    height: 20vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}  
+
+.hhead h1{
+    border-bottom: 1px solid white;
+} 
+.hbox{
+    width: 70%;
+    margin: auto;
+    height: 60vh; 
+    color: white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+} 
+.hsubox{
+    width: 20%;
+    height: 40vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-color:  transparent; 
+    border-radius: 6%; 
+    margin: 3%; 
+    border: 4px solid grey; 
+} 
+.hsubox p{
+    color: white; 
+    font-weight: bold;
+}  
+
+.hsubox:hover{
+    background-color: black;
+    box-shadow: 2px 2px 2x 2px grey, 2px 2px 2px 2px white;
+}
+
+.kind{
+    width: 100%;
+    height: 50vh;
+} 
+.khead{
+    width: 100%;
+    height: 15vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+.khead h1{
+    border-bottom: 1px solid black;
+} 
+.kindspecial{
+    width: 60%;
+    height: 15%;
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    padding: 4%; 
+}
+@media only screen and (max-width: 443px){
+    
+    .shead h1{
+        font-size: small;
+    } 
+    .w2 p{
+        font-size: small;
+    } 
+    .shead p{
+        font-size: small;
+    }
+} 
+@media only screen and (max-width: 331px){
+    .w2 p{
+        font-size: xx-small;
+    } 
+
+} 
+@media only screen and (max-width: 505px){
+    .hsubox{
+        width: 30%;
+        height: fit-content;
+    } 
+    .hbox{
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+    .hsubox p{
+        font-size: small;
+    } 
+    .hhead h1{
+        font-size: small;
+    }
+}  
+@media only screen and (max-height: 447px){
+    .kindspecial p{
+        font-size: x-small;
+    }
+}
+@media only screen and (max-width: 225px){
+    .hsubox{
+        width: fit-content;
+
+     }
+}  
+@media only screen and (max-width: 289px){
+    .kind{
+        height: 75vh; 
+    } 
+    .kindspecial p{
+        padding: 2%;
+    }
+}
+@media only screen and (max-width: 205px ){
+    .hsubox p{
+        font-size: xx-small;
+    }
+} 
+@media only screen and (max-width: 144px){
+    .hsubox p{
+        font-size: 0.2rem;
+    }
+} 
+@media only screen and (max-width: 814px){
+    .kindspecial{
+            height: 70%;
+    }
+} 
+@media only screen and (max-width: 263px){
+    .kindspecial{
+        height: 95%;
+    }
+} 
+@media only screen and (max-width: 185px){
+    .kindspecial p{
+        font-size:xx-small;
+    }
+    .khead h1{
+        font-size: small;
+    }
+} 
+@media only screen and (max-width: 108px){
+    .khead h1{
+        font-size: xx-small;
+    }
+} 
+@media only screen and (max-width: 114px){
+    .hbox{
+        flex-direction: column;
+    }
+}

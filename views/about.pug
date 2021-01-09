@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title about
+    link(rel="stylesheet" href="../static/style.css")
+    link(rel="stylesheet" href="../static/aboutstyle.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(href="https://fonts.googleapis.com/css?family=Alex Brush" rel="stylesheet")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  body
+    section.head
+      .navbar
+        .logo
+          p Artsy Tarsy
+        .menu
+          ul#link
+            li
+              a(href="/") HOME
+            li
+              a.active(href="/about") ABOUT
+            li
+              a(href="/service") SERVICE
+            li
+              a(href="/brand") BRAND
+            li
+              a(href="/gallery") GALLERY
+            li
+              a(href="/contact") CONTACT
+        a.icon(href="javascript:void(0);" onclick="myFunction()")
+          i.fa.fa-bars
+    section.about2
+      .subabout
+        .subabouthead
+          h1 ABOUT US
+        .subaboutdesc
+          .subaboutimg
+          .subaboutimgdesc
+            h3 Artsy Tarsy
+            p.space
+              | We are Artsy Tarsy, we welcome you on our sweet and delicious cakes and pasteries land. Artsy Tarsy is founded in the year 2020. We are here to make your presence worthier. We provide cakes of different flavours. We invite you to come to Artsy Tarsy. If you are unable to come to our cake land, there is another one good new for you, you can order any time and from any where from the city you like, We are here to enjoy with our delicious cake.
+            p.space
+              | Artsy Tarsy will always make you wartery and we will always welcome you for the feedback. We accept our complaint for Artsy Tarsy calmly so that we can provide our customer with the flavoured cakes.
+            p.direct Eat with a flavour!!!
+            p.direct Enjoy with a pure heart !!!
+    section#footer
+      .foot
+        .footbox
+          .foot1.img7
+            h1 Artsy Tarsy
+          .foot1
+            ul
+              li
+                a HOME
+              li
+                a ABOUT
+              li
+                a SERVICE
+              li
+                a BRAND
+              li
+                a GALLERY
+              li
+                a CONTACT
+          .foot1.address
+            ul
+              li No. 17 2nd Cross,
+              li MP Layout, Bommanahalli,
+              li Bengaluru, Karnataka
+              li 560068
+        .footbox.copy
+          p
+            a(href="mailto:artsytarsy@example.com") ArtsyTarsy@gmail.com
+          i.fa.fa-copyright  copyright  The  Artsy  Tarsy.  All  Rights  Reserved.
+  script.
+    function myFunction() {
+    var x = document.getElementById("link");
+    if (x.style.display == "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+    }

@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Brand
+    link(rel="stylesheet" href="../static/style.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(href="https://fonts.googleapis.com/css?family=Alex Brush" rel="stylesheet")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="../static/brandstyle.css")
+  body
+    section.head
+      .navbar
+        .logo
+          p Artsy Tarsy
+        .menu
+          ul#link
+            li
+              a(href="/") HOME
+            li
+              a(href="/about") ABOUT
+            li
+              a(href="/service") SERVICE
+            li
+              a.active(href="/brand") BRAND
+            li
+              a(href="/gallery") GALLERY
+            li
+              a(href="/contact") CONTACT
+        a.icon(href="javascript:void(0);" onclick="myFunction()")
+          i.fa.fa-bars
+  section.video
+    .videobg
+      video#videobg(poster="service4.jpg" autoplay="" muted="" loop="")
+        source(src="../static/video/video.mp4" type="video/mp4")
+      .videodesc
+        h1 POWERED BY
+      .videologo
+        .videologosp
+        h3 Powered by sujane.com
+  section#footer
+    .foot
+      .footbox
+        .foot1.img7
+          h1 Artsy Tarsy
+        .foot1
+          ul
+            li
+              a(href="/") HOME
+            li
+              a(href="/about") ABOUT
+            li
+              a(href="/service") SERVICE
+            li
+              a(href="/brand") BRAND
+            li
+              a(href="/gallery") GALLERY
+            li
+              a(href="/contact") CONTACT
+        .foot1.address
+          ul
+            li No. 17 2nd Cross,
+            li MP Layout, Bommanahalli,
+            li Bengaluru, Karnataka
+            li 560068
+      .footbox.copy
+        p
+          a(href="mailto:artsytarsy@example.com") ArtsyTarsy@gmail.com
+        i.fa.fa-copyright  copyright The Artsy Tarsy. All Rights Reserved.
+  script.
+    function myFunction() {
+    var x = document.getElementById("link");
+    if (x.style.display == "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+    }

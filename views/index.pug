@@ -1,0 +1,117 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Artsy Tarsy
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css')
+  link(rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css')
+  script(src='https://code.jquery.com/jquery-3.5.1.js')
+section.head
+  .navbar
+    .logo
+      p Artsy Tarsy
+    .menu
+      ul#link
+        li
+          a.active(href="/") HOME
+        li
+          a(href="/about")  ABOUT
+        li
+          a(href="/service") SERVICE
+        li
+          a(href="/brand") BRAND
+        li
+          a(href="/gallery") GALLERY
+        li
+          a(href="/contact") CONTACT
+    a.icon(href='javascript:void(0);' onclick='myFunction()')
+      i.fa.fa-bars
+section#welcome
+  .welcome
+    h1 Artsy Tarsy
+    h2 Welcome to our cake land!!!!
+section#about
+  .about
+    .abouthead
+      h1 ABOUT US
+    .aboutdesc
+      p
+        | Why should you wade through the city traffic to pick up the cake you ordered for your loved one?When
+        | we Artsy Tarsy take up the responsibilty to deliver at your doorstep.
+        | We provide cakes of all events that would please you and your loved one. The flavour that we serve
+        | is incredible in the Sillicon Valley Of India.
+        | You would never regret for the order that you place in Artsy Tarsy.We provide every service that
+        | suffice your needs.
+section.whyus
+  .why
+    .whyhead
+      h1 WHY US
+    .whydesc
+      p
+        | We provide cakes of varied flavour that you will just love.We provide 24 hour service to our customer
+        | because we consider our customer as god. We have chefs that are dignified for pudding and they
+        | provide very unique style of pudding. As we have mentioned we provide cake of varied type like
+        | birthday cake, wedding cake, pasteries , different flavour cakes like mango, strawberry, chocolate,
+        | lava cake and so on. We have the speciality to make a photo cake also. Besides, we also have the
+        | facility to gift the cake to your loved ones. We are concerned with the health too and we make out
+        | best to make a cake that is healthy for everyone.
+        | We are very delighted to say you that we also make neg and non-veg cakes, so that our vegeteraian
+        | customers will feel pleased to have a cake from us. We have gained the excellence from 10 years and
+        | we are utmost deligted to run our cake store with a sweet and delicious cake. We always welcome your
+        | presence and always accepts the feedback and complaints from you. We are always ready to listen you.
+        | Besides, these features we have lot more facility and our servuce are the best.
+section.pic
+  .view
+    .viewhead
+      h1 SPECIALITY
+    .viewdesc
+      .card1
+        .card.img1
+        .card.img2
+        .card.img3
+      .card1
+        .card.img4
+        .card.img5
+        .card.img6
+section#footer
+  .foot
+    .footbox
+      .foot1.img7
+        h1 Artsy Tarsy
+      .foot1
+        ul
+          li
+            a.active(href="/") HOME
+          li
+            a(href="/about") ABOUT
+          li
+             a(href="/service") SERVICE
+          li
+            a(href="/brand") BRAND
+          li
+            a(href="/gallery") GALLERY
+          li
+            a(href="/contact") CONTACT
+      .foot1.address
+        ul
+          li No. 17 2nd Cross,
+          li MP Layout, Bommanahalli,
+          li Bengaluru, Karnataka
+          li 560068
+    .footbox.copy
+      p
+        a(href='mailto:artsytarsy@example.com') ArtsyTarsy@gmail.com
+      i.fa.fa-copyright  copyright The Artsy Tarsy. All Rights Reserved.
+script.
+  function myFunction() {
+  var x = document.getElementById("link");
+  if (x.style.display == "block") {
+  x.style.display = "none";
+  } else {
+  x.style.display = "block";
+  }
+  }

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.subabout{
+    display: flex;
+    flex-direction: column; 
+} 
+.subabouthead{
+    width: 100%; 
+    height: 15vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.subabouthead h1{
+    border-bottom: 1px solid black;
+} 
+.subaboutdesc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: fit-content; 
+    padding: 2% 2%;
+} 
+.subaboutimg{
+    width: 35%; 
+    height: 30vh; 
+    background: url('images/newwhybg.jpg'); 
+    background-size: 100% 100%; 
+    border-radius: 50%; 
+    box-shadow: 2px 2px 2px 2px solid gray;
+} 
+.subaboutimgdesc{
+    width: 60%;
+    height: 80%;  
+    padding: 2% 2%; 
+} 
+
+.subaboutimgdesc h3{ 
+    display: inline-block;
+    border-bottom: 1.5px solid black;
+}
+.space{
+    padding: 2%;
+} 
+
+.detail{
+    text-align: center; 
+    height: 30vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.direct{
+    text-align: right;
+}  
+
+
+@media only screen and (max-width: 587px){
+    .subaboutimgdesc p{
+        font-size: xx-small;
+    } 
+    .subaboutimgdesc h3{
+        font-size: x-small;
+    }
+    .subabouthead h1{
+        font-size: x-small;
+    }
+} 
+@media only screen and (max-width: 53px){
+    .subaboutimgdesc h3{
+        font-size: xx-small;
+    } 
+    .subaboutimgdesc p{
+        font-size: 5%;
+    }
+} 
+
+} 
+@media only screen and (max-width: 683px){
+    .copy{
+        font-size: 2vh;
+    } 
+}  
+@media only screen and (max-width: 589px){
+    .subaboutdesc{
+        height: 70vh;
+    }
+} 
+@media only screen and (max-width: 140px){
+    .subaboutdesc{
+        flex-direction: column;
+    } 
+    .subaboutimgdesc{
+        width: 100%;
+    } 
+    .subaboutimg{
+        width: 100%;  
+        border: 0;
+        justify-content: center;
+        align-items: center;
+    }
+} 

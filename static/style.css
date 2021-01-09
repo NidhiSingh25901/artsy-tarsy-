@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+.head{
+    position: sticky;
+    top: 0;
+} 
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: row; 
+    max-width: 100%;   
+    background-color: black;
+    color: white; 
+    height: 9vh; 
+    z-index: 1;
+}  
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 4%; 
+    font-family: 'Alex Brush'; 
+    font-size: 45px; 
+    text-shadow: 10px 10px 10px 10px rgb(167, 160, 160), 15px 15px 15px 15px white;
+} 
+.menu{
+    position: absolute;
+    right: 4%;  
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Noto Serif', serif;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color:  white;
+} 
+.menu ul li{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none; 
+    padding: 9px 9px;  
+} 
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+} 
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.navbar > a{
+    color: white; 
+    display: none; 
+    position: absolute; 
+    right: 5%;
+    top: 42%; 
+}  
+
+.icon{
+    position: absolute;
+    top: 10%;
+}
+
+.menu ul li a:hover{ 
+    background-color: rgb(66, 64, 64);
+    border-bottom: 1px solid white;
+} 
+/*
+.menu ul li:after{
+    width: 0; 
+    transition: width .5s ease, background-color .5s ease;
+} */
+
+#welcome{ 
+    width: 100%;
+    height: 90vh;
+    background: url('images/home.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+.welcome{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 90vh; 
+    color: white; 
+    text-shadow: 10px 10px 10px rgb(0, 0, 0.3);
+}  
+.welcome h1{
+    font-size: 5rem;
+    font-family: 'Alex Brush'; 
+}
+.active{
+    background-color:rgb(0, 0, 0.3);
+    border-bottom: 1px solid white;
+} 
+
+#about
+{
+    width: 100%;
+    height: 90vh;
+}
+.about{
+    height: 90vh;
+    display: flex;
+    flex-direction: column; 
+} 
+.abouthead{ 
+    height: 30vh; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+.abouthead h1{
+    border-bottom: 1px solid black;
+}
+.aboutdesc{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(168, 163, 163);
+    width: 56vw;
+    position: relative;
+   padding: 1%;
+   left: 21vw;
+   font-size: 2vh;
+  margin: 2%;
+   box-shadow: 2px 2px 2px 2px rgb(185, 184, 184);
+   z-index: -1;
+} 
+.aboutdesc p{
+    font-family: monospace;
+}
+
+.whyus{
+    width: 100%;
+    height: 90vh; 
+    background: url('images/c1.jpg');
+    background-attachment: fixed; 
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.72); 
+    color: white;
+}
+
+.why{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+
+    padding: 5%;
+} 
+.whyhead{
+    padding: 4%;
+} 
+.whyhead h1{
+    border-bottom: 1px solid white;
+}
+.whydesc p{ 
+    padding: 2%;
+    font-size: 1.2rem; 
+    font-family: monospace; 
+
+} 
+
+.pic{
+    width: 100%;
+    height: 90vh; 
+} 
+.view{
+    display: flex;
+    flex-direction: column; 
+} 
+
+.viewhead{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+} 
+.viewhead h1{
+    border-bottom: 1px solid black;
+}
+.viewdesc{ 
+    display: flex;
+    flex-direction: column; 
+    height: 60vh; 
+    width: 93vw;
+   margin: 3%;
+    align-items: center; 
+    justify-content: center;
+} 
+.card1{
+    display: flex;
+    flex-direction: row; 
+    height: 30vh; 
+    width: 60%;
+    background: url('images/c1.jpg');
+    background-size: 100% 100%;
+    background-blend-mode: darken;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.7); 
+} 
+.card{ 
+    width: 30vw; 
+    height: 25vh;
+    display: flex;
+    flex-direction: row; 
+        margin: 1%;
+} 
+.img1{
+    background: url('images/c2.jpg');
+    background-size: 100% 100%;
+    filter: blur(1%); 
+
+} 
+.img2{
+    background: url('images/c3.jpg');
+    background-size: 100% 100%;
+    filter: blur(1%);
+
+} 
+.img3{
+    background: url('images/c4.jpg');
+    background-size: 100% 100%;
+    filter: blur(1%);
+
+} 
+.img4{
+    background: url('images/c5.jpg');
+    background-size: 100% 100%;
+    filter: blur(1%);  
+} 
+.img5{
+    background: url('images/c6.jpg');
+    background-size: 100% 100%;
+    filter: blur(1%);
+  
+} 
+.img6{
+    background: url('images/whybg2.jpg');
+    background-size: 100% 100%;
+    filter: blur(1%);
+} 
+.card:hover{
+    transform: scale(1.1); 
+    border: 2px inset white; 
+} 
+.img1{
+    box-shadow: 2px 2px 2px 2px solid black;
+}
+
+
+#footer{
+    width: 100%;
+    height: auto; 
+}
+.foot{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footbox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.copy{
+    height: 2vh !important; 
+    margin-top: 2%; 
+    font-family: 'monospace';
+    text-shadow: 4px 4px 4px 4px yellow, 2px 2px 2px 2px white; 
+    display: flex;
+    flex-direction: column;
+    font-family: monospace; 
+} 
+.copy a{
+    text-decoration: none;
+    color: white;
+    font-family: monospace; 
+} 
+.copy i{
+    font-family: monospace; 
+    text-align: center;
+}
+
+
+.foot1{
+    width: 30%;
+    height: 18vh;
+} 
+.img7{
+    background: url('images/bg.JPG');
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    background-blend-mode: darken;
+    background-color: rgba(0, 0,0, 0.7);
+    font-family: 'Alex Brush'; 
+} 
+.foot1{ 
+    display: flex; 
+    height: 18vh;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+   
+}
+.img7 h1{
+    border-bottom: 1px double white; 
+    font-size: 2vh;
+} 
+
+.foot1 ul li{
+    list-style: none; 
+    font-family: 'Noto Serif', serif; 
+    font-size: 1.5vh;
+} 
+.address{
+    display: flex;
+    flex-direction: column; 
+    font-size: 1vh;
+}
+@media only screen and (max-width: 790px) 
+{  
+
+      .menu{
+          position: absolute; 
+          right: 3%;  
+          width: 25%;  
+          height: 5vh;
+          color: white; 
+      }  
+
+      .menu ul{
+          display: flex;
+          flex-direction: column; 
+          width: 75%; 
+          height: 5vh; 
+          display: none; 
+      } 
+      .menu ul li{ 
+          color: white;
+      }  
+      .menu ul li a{
+          background-color: black; 
+          color: white;
+      }
+      .navbar .icon{
+          display: block;
+          color: white;
+      }  
+
+
+}  
+@media only screen and (max-width: 500px){
+    .aboutdesc{
+        font-size: small; 
+        line-height: 3vh;
+    } 
+    .about{
+        height: -webkit-fill-available;
+    } 
+    .logo p{
+        font-size: 1rem;
+    }  
+    .welcome h1{
+        text-align: center;
+        font-size: larger;
+    }
+    .welcome h2{
+        text-align: center;
+        font-size: medium;
+    }   
+    .aboutdesc p{
+        font-size: 2vh;
+    }
+    .whydesc p{
+        font-size: 2vh;
+    }   
+
+    .abouthead h1{
+        font-size: 2vh;
+    }
+    .whyhead h1{
+        font-size: 2vh;
+    }
+    .viewhead h1{
+        font-size: 2vh;
+    } 
+    .navbar .icon{
+        font-size: 2vh;
+    } 
+    .menu ul li{
+        font-size: 2vh;
+    }
+} 
+@media only screen and (max-width: 200px){
+    .welcome h1{
+        font-size: medium;
+    } 
+    .welcome h2{
+        font-size: small;
+    }
+}
+} 
+@media only screen and (max-width: 585px){
+    .whydesc p{
+        font-size: 2vh;
+    }
+} 
+
+@media only screen and (max-width: 1024px){
+    .view{
+        height: 100vh;
+    }  
+} 
+@media only screen and (max-width: 251px){
+    .aboutdesc p{
+           font-size: 2vh; 
+    } 
+    .logo p{
+        font-size: 2vh;
+    }
+} 
+@media only screen and (max-width: 683px){
+    .whydesc p{
+        font-size: 2vh;
+    }
+    .copy{
+        font-size: 2vh;
+    }
+} 
+@media only screen and (max-width: 1024px){
+    .aboutdesc p{
+        font-size: 2vh;
+    }
+} 
+
+@media only screen and (max-width: 427px){
+    #footer{
+        font-size: xx-small;
+    } 
+    .foot1 ul li{
+        font-size: xx-small;
+    } 
+    #footer i{
+        font-size: xx-small;
+    } 
+    #footer p{
+        font-size: xx-small;
+    }
+} 
+@media only screen and (max-width: 200px){
+    #footbox i{
+        font-size: 0.5%;
+    } 
+    .foot1 ul li {
+        font-size: 1%; 
+        padding-top: 3%;
+    } 
+    #footbox p{
+        font-size: 1%;
+    }
+    .footbox{
+        flex-direction: column;
+    }
+}  
+/*
+@media only screen and (min-width: 768px){
+    .foot{
+        height: 56vh;
+    }
+} 
+*/

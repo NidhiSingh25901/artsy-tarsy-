@@ -1,0 +1,116 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Service
+    link(rel="stylesheet" href="../static/style.css")
+    link(rel="stylesheet" href="../static/servicestyle.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(href="https://fonts.googleapis.com/css?family=Alex Brush" rel="stylesheet")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  body
+    section.head
+      .navbar
+        .logo
+          p Artsy Tarsy
+        .menu
+          ul#link
+            li
+              a(href="/") HOME
+            li
+              a(href="/about") ABOUT
+            li
+              a.active(href="/service") SERVICE
+            li
+              a(href="/brand") BRAND
+            li
+              a(href="/gallery") GALLERY
+            li
+              a(href="/contact") CONTACT
+        a.icon(href="javascript:void(0);" onclick="myFunction()")
+          i.fa.fa-bars
+    section.servicebg
+      .service
+        h1 Watery | Healthy | Delicious
+        h3 WE provide our customers, the best service....
+    section.servicedifferent
+      .servicedifferent
+        .shead
+          h1 WHAT MAKES US DIFFERENT
+          p We provide the best service that make our shop look very different.
+        .wrap
+          .w1
+            .w2.service1
+              p Healthy and Deliviuos pudding
+            .w2.service2
+              p Available with Veg & Non-Veg Cakes
+            .w2.service3
+              p Budget Friendly
+          .w1
+            .w2.service4
+              p Cakes of Various flavours
+            .w2.service5
+              p Customs for Craving
+            .w2.service6
+              p Gift availability with some presence
+    section.health
+      .healthy
+        .hhead
+          h1 HEALTHY & DELICIOUS
+        .hbox
+          .hsubox
+            p  Budget Friendly: We provide that will meet your pocket.
+          .hsubox
+            p
+              | Gift Presence: We also provide greetings and presence like keyrings, flowers etc.
+          .hsubox
+            p Various falovours: We are fortunate to provide you with cakes of many flavours.
+    section.kinds
+      .kind
+        .khead
+          h1 SPECIALITY
+        .kindspecial
+          p
+            | If you like to buy the cakes from our shop, we are very sure that our cake will suffice your taste and you will reach our shop again. Don't forget to contact with us. Go to the detailes section of our 
+            u
+              strong BRAND
+            |  page and it wii make you wartery.
+    section#footer
+      .foot
+        .footbox
+          .foot1.img7
+            h1 Artsy Tarsy
+          .foot1
+            ul
+              li
+                a HOME
+              li
+                a ABOUT
+              li
+                a.active SERVICE
+              li
+                a BRAND
+              li
+                a GALLERY
+              li
+                a CONTACT
+          .foot1.address
+            ul
+              li No. 17 2nd Cross,
+              li MP Layout, Bommanahalli,
+              li Bengaluru, Karnataka
+              li 560068
+        .footbox.copy
+          p
+            a(href="mailto:artsytarsy@example.com") ArtsyTarsy@gmail.com
+          i.fa.fa-copyright  copyright  The  Artsy  Tarsy.  All  Rights  Reserved.
+  script.
+    function myFunction() {
+    var x = document.getElementById("link");
+    if (x.style.display == "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+    }

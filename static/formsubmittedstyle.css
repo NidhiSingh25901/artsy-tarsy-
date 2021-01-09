@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('images/fs.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.7); 
+    color: rgb(187, 143, 20); 
+    font-family: monospace; 
+} 
+.msg{
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    line-height: 3rem;
+}
